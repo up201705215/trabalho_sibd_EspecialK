@@ -1,0 +1,67 @@
+body >header{
+    background-color: #046DD5;
+    padding: 1em;
+}
+
+body >header h1, body >header h2{
+    margin: 0;
+}
+body >header a{
+    color: white;
+    text-decoration: none;
+}
+body >header #signup a:first-child{
+    border-right: 1px solid white;
+}
+body >header #signup a{
+    padding: 0 1em;
+}
+body >header #signup a:first-child{
+    padding-left: 0; 
+}
+body{
+    font-family: verdana, sans-serif;
+}
+
+#hamburger, .hamburger{
+    display: none;
+}
+#menu ul{
+    margin :0;
+    padding: 0;
+}
+#menu li{
+    background-color: white;
+    text-align: center;
+    list-style-type: none;
+    padding: 1em 0;
+}
+#menu li a {
+    text-decoration: none;
+    color: black;   
+}
+#menu li:hover{
+    background-color: blueviolet;
+}
+#menu li a:hover{
+    background-color: white;
+}
+#menu li:nth-child(1){
+    border-top: 5px solid #E1493E;
+}
+#menu li:nth-child(2){
+    border-top: 5px solid #8ABA56;
+}
+#menu li:nth-child(3){
+    border-top: 5px solid #5B4282;
+}
+#menu li:nth-child(4){
+    border-top: 5px solid #FF8932;
+}
+#menu li:nth-child(5){
+    border-top: 5px solid #19B6E9;
+}
+#menu li:nth-child(6){
+    border-top: 5px solid #E84C8B;
+}
+
