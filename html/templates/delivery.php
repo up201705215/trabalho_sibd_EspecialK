@@ -2,7 +2,7 @@
     <html>
 
     <body>
-        
+        <section id="delivery">
         <form action="action_delivery.php" method="post">
         <label for="appt">Ja Fez o seu pedido? O resto, deixe conosco!!!</label>
 
@@ -38,6 +38,7 @@
         </Label>
         </form>
 
+    </section>
     </body>
 
     </html>

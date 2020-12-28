@@ -18,11 +18,11 @@
         <a href="list_cart.php">
           <i class="fas fa-shopping-basket"></i> [<?=cartSize()?>]
         </a>
-		<form action="reset_cart.php" method="post">
+		<!-- <form action="reset_cart.php" method="post">
               <button class="resetbtn"  type="submit">
                 <i class="fas fa-times"></i>
               </button>
-      </form>
+      </form> -->
       </div>
 
       

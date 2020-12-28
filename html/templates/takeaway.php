@@ -8,8 +8,8 @@
 <input name="data" type="date" value="2020-12-30">
 </form>
 
-<input type="time" id="appt" name="appt"
-       min="09:00" max="18:00" required>
+<input type="time" id="lol" name="lol"
+       min="12:00" max="15:00" required>
 
 
  </section>

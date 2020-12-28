@@ -42,17 +42,6 @@ CREATE TABLE delivery (
   hora integer
   );
 
-
-
--- DROP TABLE IF EXISTS horario_mesa;
--- CREATE TABLE horario_mesa (
---   timestart integer,
---   timeend integer CHECK(timeend>timestart or timeend is null),
---   mesa_id integer REFERENCES mesa,
---   user_id INTEGER REFERENCES user,
---   PRIMARY KEY(mesa_id,user_id)
--- );
-
 DROP TABLE IF EXISTS mesa;
  CREATE TABLE mesa (
    id INTEGER PRIMARY KEY AUTOINCREMENT,

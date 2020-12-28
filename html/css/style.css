@@ -24,6 +24,12 @@ body {
 	
 }
 
+body .employees {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body .wrapper {
   margin-left: 2em;
   color: var(--background);
