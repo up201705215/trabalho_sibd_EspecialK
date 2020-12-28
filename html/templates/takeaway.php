@@ -9,8 +9,8 @@
 <html>
 
 <body>
-  <section id="delivery">
-    <form action="action_delivery.php" method="post">
+  <section id="takeaway">
+    <form action="action_takeaway.php" method="post">
       <h2>Escolha a data e a hora para vir levantar o seu pedido na nossa zona Take Away:</h2>
 
 
