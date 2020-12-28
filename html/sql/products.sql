@@ -33,6 +33,17 @@ CREATE TABLE orders (
   type_of_order integer
 );
 
+DROP TABLE IF EXISTS delivery; 
+CREATE TABLE delivery (   
+  id INTEGER PRIMARY KEY AUTOINCREMENT,   
+  -- username VARCHAR REFERENCES users,  
+  nome_delivery VARCHAR ,   
+  telefone integer,   
+  hora integer
+  );
+
+
+
 -- DROP TABLE IF EXISTS horario_mesa;
 -- CREATE TABLE horario_mesa (
 --   timestart integer,

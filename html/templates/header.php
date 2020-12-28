@@ -37,7 +37,7 @@
           <a href="profile.php">
             
             <?=$_SESSION['username']?>
-            </a>
+            </a>  
           </span>
           <button class="logout-btn" type="submit">Logout</button>
         </form>

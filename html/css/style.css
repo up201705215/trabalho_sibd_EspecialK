@@ -16,15 +16,34 @@
 
 body {
   min-height: 100%;
-
   margin: 0 auto;
   background-color: var(--background-color-light);
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+	
+}
 
-  
+body .wrapper {
+  margin-left: 2em;
+  color: var(--background);
+}
+
+body .wrapper img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+body .wrapper h3 {
+  font-size: 1.5em;
+}
+
+body .wrapper label {
+  font-size: 1em;  
+}
+
+body .wrapper form {
+  float:left;  
 }
 
 body p {
@@ -83,10 +102,14 @@ body > header form {
   grid-template-columns: auto auto;
 }
 
-body > header img { 
-  height: 2em;
-  align-self: flex-end;
+body > header a { 
   margin-right: 1em;
+}
+
+body > header a img {
+  position: relative;
+  height: 4em;
+  bottom: -25% ;
 }
 
 body > header form.logout span {
@@ -479,7 +502,7 @@ body > footer {
   text-align: center;
   font-size: 2em;
   border-collapse: collapse;
-  border: 1px solid var(--background-color-dark);
+  border: 2px solid var(--primary-color);
   z-index: 100;
 }
 
@@ -535,7 +558,6 @@ body > footer {
   padding: 0.4em 1em;
   border: none;
   position: relative;
-  line-height: 100%;
   top: -0.7em;
 }
 
@@ -597,6 +619,11 @@ body > footer {
   margin-right: 0.5em;
 }
 
+#takeaway {
+  margin-left: 2em; 
+}
+
+
 input[type="submit"]{
   display: block;
   background: var(--background-color);
@@ -605,8 +632,8 @@ input[type="submit"]{
   outline: none;
   padding: 0.4em 1em;
   border: none;
-  position: relative;
   line-height: 100%;
+  font-size: 0.8em;
   top: 0em;
 }
 
@@ -623,6 +650,7 @@ label {
 input,
 label {
     margin: .4rem 0;
+	font-size: 1em;
 }
 
 /**
@@ -631,6 +659,7 @@ label {
 
 label {
   display: block;
+  font-size: 1em;
   font: 4rem 'Fira Sans', sans-serif;
 }
 
@@ -638,3 +667,4 @@ input,
 label {
   margin: .4rem 0;
 }
+

@@ -21,6 +21,7 @@
   }
   if ($_POST['checkout_type'] == "2") { // Delivery
     $_SESSION['message'] = 'A que hoje deseja receber o pedido?';
+    die(header('Location: delivery.php'));
 
   }
   if ($_POST['checkout_type'] == "3") { // Takeway
