@@ -1,13 +1,15 @@
 <?php
 
-function getAllCategories() {
+function getAllCategories()
+{
   global $dbh;
   $stmt = $dbh->prepare('SELECT * FROM category');
   $stmt->execute();
   return $stmt->fetchAll();
 }
 
-function getCategoryById($id) {
+function getCategoryById($id)
+{
   global $dbh;
   $stmt = $dbh->prepare('SELECT * 
                          FROM category 
@@ -15,5 +17,3 @@ function getCategoryById($id) {
   $stmt->execute(array($id));
   return $stmt->fetch();
 }
-
-?>

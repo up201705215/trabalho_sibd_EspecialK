@@ -16,4 +16,3 @@
   include('templates/header.php');
   include('templates/list_cart.php');
   include('templates/footer.php');
-?>

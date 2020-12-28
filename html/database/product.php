@@ -61,5 +61,3 @@
   function saveProductPic($prod_id){
     move_uploaded_file($_FILES['prod_pic']["tmp_name"],"images/$prod_id.jpg");
   }
-
-?>

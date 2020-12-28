@@ -13,4 +13,3 @@
     $stmt->execute(array($username, sha1($password)));
     return $stmt->fetch() !== false;
   }
-?>

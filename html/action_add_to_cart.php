@@ -7,4 +7,3 @@
   $_SESSION['cart'][$id] += $quantity; 
 
   header('Location: ' . $_SERVER['HTTP_REFERER']);
-?>

@@ -3,4 +3,3 @@
 //   $_SESSION['cart']= '0'; 
 
 //   header('Location: ' . $_SERVER['HTTP_REFERER']);
-?>

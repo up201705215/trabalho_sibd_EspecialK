@@ -7,4 +7,3 @@
   include('templates/header.php');
   include('templates/list_mesas.php');
   include('templates/footer.php');
-?>

@@ -33,4 +33,3 @@
       $_SESSION['message'] = 'Registration failed!';
     header('Location: register.php');
   }
-?>

@@ -17,4 +17,3 @@
     $_SESSION['message'] = 'Login failed!';
 
   header('Location: ' . $_SERVER['HTTP_REFERER']);
-?>

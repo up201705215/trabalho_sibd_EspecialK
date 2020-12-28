@@ -5,4 +5,3 @@
   include('templates/header.php');
   include('templates/delivery.php');
   include('templates/footer.php');
-?>

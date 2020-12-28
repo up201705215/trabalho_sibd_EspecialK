@@ -4,4 +4,3 @@
   include('templates/header.php');
   include('templates/change_user.php');
   include('templates/footer.php');
-?>

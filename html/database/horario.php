@@ -15,5 +15,3 @@ function getMesaById($id) {
   $stmt->execute(array($id));
   return $stmt->fetch();
 }
-
-?>

@@ -5,5 +5,3 @@
   $stmt->execute(array($nome_takeaway,  $hora_takeaway));
   //return $dbh->lastInsertId('orders_id_seq');
 }
-
-?>

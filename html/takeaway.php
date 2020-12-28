@@ -4,4 +4,3 @@
   include('templates/header.php');
   include('templates/takeaway.php');
   include('templates/footer.php');
-?>

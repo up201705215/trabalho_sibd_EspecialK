@@ -27,7 +27,4 @@
     $prod_id = insertProduct($prod_id,$product_name, $price,  $cat_id,$stock); 
     saveProductPic($prod_id);  
     
-    header('Location: list_categories.php')
-
-  
-?>
+    header('Location: list_categories.php');

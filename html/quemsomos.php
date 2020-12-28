@@ -3,5 +3,3 @@
   include('templates/header.php');
   include('templates/qs.php');
   include('templates/footer.php');
-  
-?>

@@ -15,6 +15,3 @@ function getMesaByCapacity($quantidade_mesa) {
   $stmt->execute(array($quantidade_mesa));
   return $stmt->fetchAll();
 }
-
-
-?>

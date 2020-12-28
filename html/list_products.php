@@ -28,4 +28,3 @@
   include('templates/header.php');
   include('templates/list_products.php');
   include('templates/footer.php');
-?>

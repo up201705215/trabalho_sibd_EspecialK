@@ -10,5 +10,3 @@
   insertDelivery($nome_delivery, $telefone, $hora);
 
   die(header('Location: list_categories.php'));
-
-?>

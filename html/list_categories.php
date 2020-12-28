@@ -11,4 +11,3 @@
   include('templates/header.php');
   include('templates/list_categories.php');
   include('templates/footer.php');
-?>

@@ -11,5 +11,3 @@
   //   $stmt = $dbh->prepare('INSERT INTO order_line VALUES(?, ?, ?)');
   //   $stmt->execute(array($order_id, $prod_id, $quantity));
   // }
-
-?>
