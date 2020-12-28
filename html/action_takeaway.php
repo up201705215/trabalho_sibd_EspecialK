@@ -8,4 +8,5 @@
 
   insertTakeaway($nome_takeaway, $hora_takeaway);
 
+  die(header('Location: list_categories.php'));
 ?>
