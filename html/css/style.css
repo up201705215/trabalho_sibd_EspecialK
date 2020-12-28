@@ -86,7 +86,7 @@ body > header form {
 body > header img { 
   height: 2em;
   align-self: flex-end;
-  margin-left: 1em;
+  margin-right: 1em;
 }
 
 body > header form.logout span {
@@ -225,6 +225,7 @@ body > footer {
 }
 #categories ul li .fadeimg {
   background-color: var(--background-color-dark);
+  
 }
 
 #categories ul li .fadeimg img {
@@ -242,13 +243,13 @@ body > footer {
   top: 5em;
   height:0;
   margin: 0 0 0 0;
-  z-index: 100;  /* costa*/
+  z-index: 100;
 }
 
 
 #categories ul li .fadeimg:hover > img{
-  opacity: 0.5;  /* costa*/
-}
+  opacity:0.4;
+ }
 #categories ul li .fadeimg:hover > h2 {
   opacity:1;
   color: var(--primary-color);
@@ -279,8 +280,7 @@ body > footer {
 
 #products .list article {
   background-color: var(--background-color-dark);
-  height: 168px;
-  width: 168px;
+  width: 20%;
   color: var(--primary-color);
   padding: 0em; margin: 0em; border: 0em;
   display: flex;
@@ -293,17 +293,17 @@ body > footer {
 }
 
 #products .list article:hover > h3, #products .list article:hover > .price, #products .list article:hover > .stock, #products .list article:hover > input, #products .list article:hover > form, #products .list article:hover > form input, #products .list article:hover > form button {
-	opacity: 1;
-  z-index: 100; /* costa*/
+  opacity: 1;
+  z-index: 100;
 }
 
 #products .list article:hover > img {
-	opacity: 0.5;  /* costa*/
+  opacity: 0.4;
 }
 
 #products .list article h3 {
   position: relative;
-  top: 1em;
+  top: 2em;
   margin: 0;
   height: 0;
   transition: all .2s;
@@ -321,7 +321,7 @@ body > footer {
 
 #products .list article .price {
   position: relative;
-  top: 1.5em;
+  top: 3em;
   color: var(--primary-color);
   font-size: 2em;
   transition: all .2s;
@@ -333,54 +333,12 @@ body > footer {
   justify-self: center;
   align-self: stretch;
   position: relative;
-  top: 5.4em;
+  top: 9em;
   transition: all .2s;
   width: 100%;
   height: 0;
   opacity: 0;
 }
-
-#register form {
-  display: block;
-  margin: 1em;
-}
-
-#register form input{
-	display: block;
-	margin-bottom: 1em;
-}
-
-
-/* #register form .sbmt{ */
-  /* display: block; */
-  /* background: var(--background-color); */
-  /* color: var(--primary-color); */
-  /* border-radius: 30px; */
-  /* outline: none; */
-  /* padding: 0.4em 1em; */
-  /* border: none; */
-  /* position: relative; */
-  /* line-height: 100%; */
-  /* top: 0em; */
-/* } */
-
-
-/* #register form .sbmt:hover{ */
-  /* background: var(--primary-color); */
-  /* color: var(--background-color); */
-/* } */
-
-#register form label {
-  font-size: 1em;
-  font-weight: bold;
-}
-
-#register h2 {
-  margin-left: 0.5em;
-  font-weight: bold;
-}
-
-
 
 /* #add_product form { */
   /* display: block; */
@@ -424,7 +382,7 @@ body > footer {
 
 #products article form {
   position: relative;
-  top: 8.5em;
+  top: 17.5em;
   display: flex;
   justify-self: center;
   align-self: stretch;
@@ -442,19 +400,15 @@ body > footer {
   padding: 0em 0em 0em 0em;
   width: 2em;
   height: 1em;
-  line-height: 1em;
   transition: all .2s;
   opacity: 0;
 }
 
 #products article form button {
   margin-left: 2em;
-
   border: none;
-
   background-color: transparent;
   color: var(--primary-color);
-
   font-size: 1.2em;
   transition: all .2s;
   opacity: 0;
@@ -469,13 +423,45 @@ body > footer {
   margin: 0 1em;
 }
 
-#products .pagination {
-  display: flex;
-  justify-content: center;
+
+#register form {
+  display: block;
+  margin: 1em;
 }
 
-#products .pagination a {
-  margin: 0 1em;
+#register form input{
+	display: block;
+	margin-bottom: 1em;
+}
+
+
+/* #register form .sbmt{ */
+  /* display: block; */
+  /* background: var(--background-color); */
+  /* color: var(--primary-color); */
+  /* border-radius: 30px; */
+  /* outline: none; */
+  /* padding: 0.4em 1em; */
+  /* border: none; */
+  /* position: relative; */
+  /* line-height: 100%; */
+  /* top: 0em; */
+/* } */
+
+
+/* #register form .sbmt:hover{ */
+  /* background: var(--primary-color); */
+  /* color: var(--background-color); */
+/* } */
+
+#register form label {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#register h2 {
+  margin-left: 0.5em;
+  font-weight: bold;
 }
 
 #cart table {
@@ -487,10 +473,18 @@ body > footer {
 
 #cart table td {
   text-align: center;
+  font-size: 2em;
+  border-collapse: collapse;
+  border: 1px solid var(--background-color-dark);
+  z-index: 100;
 }
+
+
 
 #cart table img {
   width: 2em;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 #cart table td:nth-child(-n+2) {
@@ -571,26 +565,28 @@ body > footer {
   height: 0;
 }
 
-#mesas ul li span{
+#mesas ul li a span{
   transition: all .2s;
   opacity: 0;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100%; 
+  position: relative;
+  left: 50%;
+  top: -50%;
+  z-index: 100;
 }
 
-#mesas ul li img{
+#mesas ul li a img{
   transition: all .2s;
   opacity: 1;
-  width: 100%;
+  width: 200px;
 }
 
-#mesas ul li:hover > a span{
+#mesas ul li:hover > a > span{
   opacity: 1;
+  color: var(--primary-color);
 }
 
-#mesas ul li:hover > img{
-  opacity: 0;
+#mesas ul li:hover > a > img{
+  opacity: 0.4;
 }
 
 #mesas form input[type="number"]{
