@@ -28,11 +28,19 @@
       
 
       <?php if (isset($_SESSION['username'])) { ?>
+        
+        <a href="profile.php">
+          
+        <img src="images/users/<?=$_SESSION['username']?>.jpg" alt="profile_pic"></a>
         <form class="logout" action="action_logout.php">
-          <span><?=$_SESSION['username']?></span>
+          <span>
+          <a href="profile.php">
+            
+            <?=$_SESSION['username']?>
+            </a>
+          </span>
           <button class="logout-btn" type="submit">Logout</button>
         </form>
-        <img src="images/users/<?=$_SESSION['username']?>.jpg" alt="profile_pic">
       <?php } else { ?>
         <form class="login" action="action_login.php" method="post">
           <input type="text" placeholder="username" name="username">

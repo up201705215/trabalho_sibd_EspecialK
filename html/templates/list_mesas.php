@@ -11,9 +11,10 @@
     <?php foreach ($mesas as $mesa) { ?>
       <li>
         
-        <a  href="list_products.php?id=<?=$mesa['capacidade']?>">
-          <?=$mesa['capacidade']?> Pessoas 
-          <img href="list_products.php" src="<?='/images/mesas/' . $mesa['image_name']?>" alt="<?='Image preview for mesa ' . $mesa['image_name']?>">
+        <a  href="list_categories.php">
+          <span><?=$mesa['capacidade']?> Pessoas </span>
+          <img href="list_categories.php" src="<?='/images/mesas/' . $mesa['image_name']?>" alt="<?='Image preview for mesa ' . $mesa['image_name']?>">
+          <!-- $_SESSION['message'] = 'Login failed!'; -->
         </a>
         </a>
       </li>

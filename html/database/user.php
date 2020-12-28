@@ -17,9 +17,7 @@
     $stmt->execute(array($admin_username, sha1($admin_password), $admin_email, $admin_morada));
   }
 
-  $cont=0;
-  if($cont=0)createAdmin();
-  $cont++;
+ 
   
 
   function isLoginCorrect($username, $password  ) {
@@ -73,5 +71,16 @@
 
     $stmt = $dbh->prepare('UPDATE users SET password = ? WHERE username = ?');
     $stmt->execute(array(sha1($password),$username));
+  }
+
+  function getprofile($username){
+    global $dbh;
+
+    $stmt = $dbh->prepare('SELECT * FROM users WHERE username = ?');
+    $stmt->execute(array($username));
+
+    $user = $stmt->fetch();
+
+    return $user;
   }
 ?>

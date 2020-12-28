@@ -350,6 +350,10 @@ body > footer {
 	margin-bottom: 1em;
 }
 
+#add_product {
+  margin-left: 2em;
+}
+
 
 /* #add_product form .sbmt{ */
   /* display: block; */
