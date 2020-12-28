@@ -2,10 +2,7 @@
   <h2>Adicionar produto</h2>
   <form action="action_add_product.php" method="post" enctype="multipart/form-data" >
     
-  <label for="prod_id">id</label>
-    <input type="integer" name="prod_id" placeholder="prod_id"> 
-
-  <label for="product_name">Nome</label>
+    <label for="product_name">Nome</label>
     <input type="text" name="product_name" placeholder="product_name">
     
     <label for="price">Preço</label>

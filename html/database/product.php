@@ -49,7 +49,14 @@
     global $dbh;
     $stmt = $dbh->prepare('INSERT INTO product (name, price, cat_id, stock) VALUES(?, ?, ?, ?)');
     $stmt->execute(array($product_name, $price, $cat_id,$stock));
+
+    $stmt = $dbh->prepare('SELECT * from product WHERE name = ?');
+    $stmt->execute(array($product_name));
+    $produto = $stmt->fetch();
+    return $produto['id'];
   }
+
+
 
   function saveProductPic($prod_id){
     move_uploaded_file($_FILES['prod_pic']["tmp_name"],"images/$prod_id.jpg");

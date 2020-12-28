@@ -242,12 +242,13 @@ body > footer {
   top: 5em;
   height:0;
   margin: 0 0 0 0;
+  z-index: 100;  /* costa*/
 }
 
 
 #categories ul li .fadeimg:hover > img{
-  opacity:0;
- }
+  opacity: 0.5;  /* costa*/
+}
 #categories ul li .fadeimg:hover > h2 {
   opacity:1;
   color: var(--primary-color);
@@ -293,10 +294,11 @@ body > footer {
 
 #products .list article:hover > h3, #products .list article:hover > .price, #products .list article:hover > .stock, #products .list article:hover > input, #products .list article:hover > form, #products .list article:hover > form input, #products .list article:hover > form button {
 	opacity: 1;
+  z-index: 100; /* costa*/
 }
 
 #products .list article:hover > img {
-	opacity: 0;
+	opacity: 0.5;  /* costa*/
 }
 
 #products .list article h3 {

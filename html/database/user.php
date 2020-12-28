@@ -55,6 +55,6 @@
     global $dbh;
 
     $stmt = $dbh->prepare('UPDATE users SET password = ? WHERE username = ?');
-    $stmt->execute(array($password,$username));
+    $stmt->execute(array(sha1($password),$username));
   }
 ?>

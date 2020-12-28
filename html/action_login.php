@@ -7,7 +7,7 @@
 
   if (isLoginCorrect($username, $password)){
     if ($username === 'admin'){
-      die(header('Location: admin.php'));
+      die(header('Location: add_product.php'));
     }
   }
 

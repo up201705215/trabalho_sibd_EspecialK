@@ -2,7 +2,7 @@
   require_once('config/init.php');
   require_once('database/product.php');
 
-  $prod_id = $_POST['prod_id'];
+
   $product_name = $_POST['product_name'];
   $price = $_POST['price'];
   $cat_id = $_POST['cat_id'];
@@ -24,7 +24,7 @@
 // }
 
   
-    insertProduct($prod_id,$product_name, $price, $cat_id,$stock); 
+    $prod_id = insertProduct($prod_id,$product_name, $price,  $cat_id,$stock); 
     saveProductPic($prod_id);  
     
     header('Location: list_categories.php')
