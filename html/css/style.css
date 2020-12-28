@@ -29,6 +29,24 @@ body .wrapper {
   color: var(--background);
 }
 
+body .wrapper button {
+  display: block;
+  background: var(--background-color);
+  color: var(--primary-color);
+  border-radius: 30px;
+  outline: none;
+  padding: 0.4em 1em;
+  border: none;
+  line-height: 100%;
+  font-size: 0.8em;
+  top: 0em;
+}
+
+body .wrapper button:hover {
+  background: var(--primary-color);
+  color: var(--background-color);
+}
+
 body .wrapper img {
   max-width: 300px;
   max-height: 300px;
@@ -646,7 +664,20 @@ body > footer {
 
 #delivery select {
 	margin: 0 0 1em 0;
+}
 
+#change_user {
+	margin-left: 2em;
+}
+
+#change_user p {
+	margin: 1em 0 0 0;
+	text-indent: 0em;
+	font-size: 1em;
+}
+
+#change_user select {
+	margin: 0 0 1em 0;
 }
 
 input[type="submit"]{
