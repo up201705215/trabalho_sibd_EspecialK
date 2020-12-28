@@ -6,6 +6,7 @@
   $dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
   $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+
   function cartSize() {
     if (!isset($_SESSION['cart'])) return 0;
     $count = 0;

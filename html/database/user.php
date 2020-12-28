@@ -5,6 +5,23 @@
     $stmt->execute(array($username, sha1($password), $email, $morada));
   }
 
+  function createAdmin() {
+
+    $admin_username='admin';
+    $admin_password='admin';
+    $admin_email='admin';
+    $admin_morada='admin';
+
+    global $dbh;
+    $stmt = $dbh->prepare('INSERT INTO users VALUES(?, ?, ?, ?)');
+    $stmt->execute(array($admin_username, sha1($admin_password), $admin_email, $admin_morada));
+  }
+
+  $cont=0;
+  if($cont=0)createAdmin();
+  $cont++;
+  
+
   function isLoginCorrect($username, $password  ) {
     global $dbh;
     $stmt = $dbh->prepare('SELECT * 

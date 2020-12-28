@@ -23,7 +23,7 @@ CREATE TABLE users (
   email VARCHAR,
   morada VARCHAR
 );
-INSERT INTO users (username,password) VALUES ('admin', 'admin');
+
 
 DROP TABLE IF EXISTS orders;
 CREATE TABLE orders (
