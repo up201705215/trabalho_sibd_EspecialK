@@ -24,12 +24,6 @@ body {
 	
 }
 
-body .employees {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body .wrapper {
   margin-left: 2em;
   color: var(--background);
@@ -629,6 +623,20 @@ body > footer {
   margin-left: 2em; 
 }
 
+#delivery {
+	margin-left: 2em;
+}
+
+#delivery p {
+	margin: 1em 0 0 0;
+	text-indent: 0em;
+	font-size: 1em;
+}
+
+#delivery select {
+	margin: 0 0 1em 0;
+
+}
 
 input[type="submit"]{
   display: block;

@@ -4,26 +4,26 @@
     <body>
         <section id="delivery">
         <form action="action_delivery.php" method="post">
-        <label for="appt">Ja Fez o seu pedido? O resto, deixe conosco!!!</label>
+        <h2>Ja Fez o seu pedido? O resto, deixe conosco!!!</h2>
 
 
-        <label> Nome Completo:
+        <p>Nome Completo:</p>
         
             <input type="text" name="nome_delivery" id="nome_delivery">
         
-        </label>
+    
 
-        <label> Nº de Telefone:
+        <p>Nº de Telefone:</p>
         
             <input type="integer"
             name="telefone" id="telefone">
         
-        </label>
+     
 
 
-        <label >Morada-<?php echo $user['morada']?></label>
+        <p>Morada-<?php echo $user['morada']?><p>
 
-        <label for="hora">Hora</label>
+        <p for="hora">Hora</p>
     <select id="hora" name="hora" type="integer">
       <option value=1>12:00-12:30</option>
       <option  value=2>12:30-13:00</option>

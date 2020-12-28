@@ -8,35 +8,35 @@
   $confirma = $_POST['confirma'];
 
   if ($nova === '') {
-    $_SESSION['message'] = 'Invalid username!';
+    $_SESSION['message'] = 'Username Inválido!';
     die(header('Location: change_user.php'));
   }
 
   if(strlen($nova)==0){
-    $_SESSION["message"]="Invalid Username";
+    $_SESSION["message"]="Username Inválido";
     die(header('Location: change_user.php'));
 }
 
   if(strlen($nova)<4){
-    $_SESSION["message"]="password too short";
+    $_SESSION["message"]="Password demasiado pequena";
     die(header('Location: change_user.php'));
 }
 
 if($antiga && $nova && $confirma){
-  if($nova === $confirma) { /*VERIFICAR NEW = CONF PASSWORD*/
-    if (sha1($antiga, getPassword($username))) { /*VERIFICAR OLD PASSWORD*/
+  if($nova === $confirma) { 
+    if (sha1($antiga, getPassword($username))) { 
       try {
         changePassword($username,$nova);
-        $_SESSION['message'] = 'Password changed with success!';
+        $_SESSION['message'] = 'Password alterada com sucesso!';
         die(header('Location: change_user.php'));
       } catch (PDOException $e) {
-        $_SESSION['message'] = 'ERROR: Password not changed';
+        $_SESSION['message'] = 'ERROR: Password não alterada';
         die(header('Location: change_user.php'));      }
     } else {
-      $_SESSION['message'] = 'Old password wrong!';
+      $_SESSION['message'] = 'Password antiga errada!';
       die(header('Location: change_user.php'));    }
   } else {
-    $_SESSION['message'] = 'Confirmation password different from New password!';
+    $_SESSION['message'] = 'Passwords novas não coincidem!';
     die(header('Location: change_user.php'));
   }
 }

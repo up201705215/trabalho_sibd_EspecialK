@@ -42,6 +42,15 @@ CREATE TABLE delivery (
   hora integer
   );
 
+  DROP TABLE IF EXISTS takeaway; 
+CREATE TABLE takeaway (   
+  id INTEGER PRIMARY KEY AUTOINCREMENT,   
+  -- username VARCHAR REFERENCES users,  
+  nome_takeaway VARCHAR ,   
+  hora_takeaway integer
+  );
+
+
 DROP TABLE IF EXISTS mesa;
  CREATE TABLE mesa (
    id INTEGER PRIMARY KEY AUTOINCREMENT,

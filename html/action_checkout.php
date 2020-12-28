@@ -25,7 +25,6 @@
 
   }
   if ($_POST['checkout_type'] == "3") { // Takeway
-    $_SESSION['message'] = 'A que horas deseja receber o seu pedido?';
     die(header('Location: takeaway.php'));
   }
 

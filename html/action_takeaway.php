@@ -1,12 +1,11 @@
 <?php
   require_once('config/init.php');
-  require_once('database/delivery.php');
+  require_once('database/takeaway.php');
 
-  $nome_delivery = $_POST['nome_delivery'];
-  $hora = $_POST['hora'];
-  $telefone = $_POST['telefone'];
+  $nome_takeaway = $_POST['nome_takeaway'];
+  $hora_takeaway = $_POST['hora_takeaway'];
   
 
-  insertDelivery($nome_delivery, $telefone, $hora);
+  insertTakeaway($nome_takeaway, $hora_takeaway);
 
 ?>
