@@ -9,7 +9,11 @@
   </head>
   <body>
     <header class="full-width">
-      <h1><a href="list_categories.php">ESPECIAL K</a></h1>
+      <h1><a href="list_categories.php">ESPECIAL <i class="fab fa-korvue"></i>
+
+</a>
+      
+    </h1>
       <div class="cart">
         <a href="list_cart.php">
           <i class="fas fa-shopping-basket"></i> [<?=cartSize()?>]

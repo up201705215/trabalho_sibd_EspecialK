@@ -42,12 +42,12 @@ CREATE TABLE orders (
 --   PRIMARY KEY(mesa_id,user_id)
 -- );
 
--- DROP TABLE IF EXISTS mesa;
--- CREATE TABLE mesa (
---   id INTEGER PRIMARY KEY AUTOINCREMENT,
---   capacidade INTEGER NOT NULL,
---   image_name VARCHAR NOT NULL
--- );
+DROP TABLE IF EXISTS mesa;
+ CREATE TABLE mesa (
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   capacidade INTEGER NOT NULL,
+   image_name VARCHAR NOT NULL
+);
 
 DROP TABLE IF EXISTS order_line;
 CREATE TABLE order_line (
@@ -93,12 +93,20 @@ INSERT INTO product (name, price, cat_id, stock) VALUES ('Maçâ Assada', '1.99'
 INSERT INTO product (name, price, cat_id, stock) VALUES ('Pudim', '3.99', 3, 10);
 
 INSERT INTO category (name, image_name) VALUES ('Entradas', 'entradas.jpg');
-INSERT INTO product (name, price, cat_id, stock) VALUES ('Mateiga', '3.99', 4, 10);
-INSERT INTO product (name, price, cat_id, stock) VALUES ('Salada', '3.99', 4, 10);
+INSERT INTO product (name, price, cat_id, stock) VALUES ('Manteiga', '0.99', 4, 10);
+INSERT INTO product (name, price, cat_id, stock) VALUES ('Salada', '2.99', 4, 10);
+INSERT INTO product (name, price, cat_id, stock) VALUES ('Pão de alho', '2.49', 4, 10);
+INSERT INTO product (name, price, cat_id, stock) VALUES ('Azeitonas', '1.39', 4, 10);
+INSERT INTO product (name, price, cat_id, stock) VALUES ('Sopa', '1.99', 4, 10);
 
-INSERT INTO mesa (capacidade, image_name) VALUES (5, 'mesa1.jpg');
-INSERT INTO mesa (capacidade, image_name) VALUES (4, 'mesa2.jpg');
-INSERT INTO mesa (capacidade, image_name) VALUES (3, 'mesa3.jpg');
-INSERT INTO mesa (capacidade, image_name) VALUES (2, 'mesa4.jpg');
-INSERT INTO mesa (capacidade, image_name) VALUES (1, 'mesa5.jpg');
+INSERT INTO mesa (capacidade, image_name) VALUES (6, 'mesa1.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (4, 'mesa2.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (4, 'mesa3.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (2, 'mesa4.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (10, 'mesa5.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (10, 'mesa6.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (4, 'mesa7.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (2, 'mesa8.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (2, 'mesa9.png');
+INSERT INTO mesa (capacidade, image_name) VALUES (1, 'mesa10.png');
 

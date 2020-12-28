@@ -27,6 +27,12 @@ body {
   
 }
 
+body p {
+  font-size: 1.5em;
+  margin: 1em 1em 1em 1em;
+  text-indent: 1em;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -88,7 +94,7 @@ body > header form.logout span {
 }
 
 body > header form.login input, body > header form.login a {
-  margin: 0em;
+  margin-top: 0.5em;
 }
 
 body > header form.login .login-btn{
@@ -106,7 +112,9 @@ body > header form.login .login-btn:hover{
 }
 
 body > header form.login a{
-  line-height: 2em;
+	position: relative;
+  top: -0.25em;
+  line-height: 1.5em;
   margin-left: 1em;
 }
 
@@ -332,6 +340,7 @@ body > footer {
 
 #register form {
   display: block;
+  margin: 1em;
 }
 
 #register form input{
@@ -340,32 +349,73 @@ body > footer {
 }
 
 
-#register form .sbmt{
-  display: block;
-  background: var(--background-color);
-  color: var(--primary-color);
-  border-radius: 30px;
-  outline: none;
-  padding: 0.4em 1em;
-  border: none;
-  position: relative;
-  line-height: 100%;
-  top: 0em;
-}
+/* #register form .sbmt{ */
+  /* display: block; */
+  /* background: var(--background-color); */
+  /* color: var(--primary-color); */
+  /* border-radius: 30px; */
+  /* outline: none; */
+  /* padding: 0.4em 1em; */
+  /* border: none; */
+  /* position: relative; */
+  /* line-height: 100%; */
+  /* top: 0em; */
+/* } */
 
 
-#register form .sbmt:hover{
-  background: var(--primary-color);
-  color: var(--background-color);
-}
+/* #register form .sbmt:hover{ */
+  /* background: var(--primary-color); */
+  /* color: var(--background-color); */
+/* } */
 
 #register form label {
   font-size: 1em;
-  margin-left: 1em;
   font-weight: bold;
 }
 
 #register h2 {
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+
+
+/* #add_product form { */
+  /* display: block; */
+  /* margin-left: 1em; */
+/* } */
+
+#add_product form input{
+	display: block;
+	margin-bottom: 1em;
+}
+
+
+/* #add_product form .sbmt{ */
+  /* display: block; */
+  /* background: var(--background-color); */
+  /* color: var(--primary-color); */
+  /* border-radius: 30px; */
+  /* outline: none; */
+  /* padding: 0.4em 1em; */
+  /* border: none; */
+  /* position: relative; */
+  /* line-height: 100%; */
+  /* top: 0em; */
+/* } */
+
+
+/* #add_product form .sbmt:hover{ */
+  /* background: var(--primary-color); */
+  /* color: var(--background-color); */
+/* } */
+
+#add_product form label {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#add_product h2 {
   margin-left: 0.5em;
   font-weight: bold;
 }
@@ -491,6 +541,74 @@ body > footer {
 
 
 #cart form input:hover{
+  background: var(--primary-color);
+  color: var(--background-color);
+}
+
+#mesas {
+  margin-left: 2em;
+}
+
+#mesas label {
+  font-size: 1em;
+}
+
+#mesas form input{
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+#mesas ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#mesas ul li a{
+  width: 0;
+  height: 0;
+}
+
+#mesas ul li span{
+  transition: all .2s;
+  opacity: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%; 
+}
+
+#mesas ul li img{
+  transition: all .2s;
+  opacity: 1;
+  width: 100%;
+}
+
+#mesas ul li:hover > a span{
+  opacity: 1;
+}
+
+#mesas ul li:hover > img{
+  opacity: 0;
+}
+
+#mesas form input[type="number"]{
+  margin-right: 0.5em;
+}
+
+input[type="submit"]{
+  display: block;
+  background: var(--background-color);
+  color: var(--primary-color);
+  border-radius: 30px;
+  outline: none;
+  padding: 0.4em 1em;
+  border: none;
+  position: relative;
+  line-height: 100%;
+  top: 0em;
+}
+
+input[type="submit"]:hover{
   background: var(--primary-color);
   color: var(--background-color);
 }
